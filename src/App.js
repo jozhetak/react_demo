@@ -26,7 +26,7 @@ class App extends Component {
 
   render() {
     const persons = this.state.person.map((item, i) => (
-      <div>
+      <div key={item.id}>
         <h1>{ item.firstName } { item.lastName }</h1>
         <span>{ item.email }</span>
         <hr/>
